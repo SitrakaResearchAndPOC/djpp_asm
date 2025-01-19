@@ -16,10 +16,7 @@ cd djpp_asm
 unzip linux-ex.zip
 ```
 ```
-cd linux-ex
-```
-```
-dir
+ls
 ```
 ## Integration of C and ASM
 ```
