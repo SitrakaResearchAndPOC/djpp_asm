@@ -4,10 +4,13 @@
 apt update
 ```
 ```
-apt install nasm binutils gcc libc6-dev-i386 gcc-multilib
+apt install nasm binutils gcc libc6-dev-i386 gcc-multilib git
 ```
 ```
 git clone https://github.com/SitrakaResearchAndPOC/djpp_asm
+```
+```
+djpp_asm
 ```
 ```
 unzip linux-ex.zip
