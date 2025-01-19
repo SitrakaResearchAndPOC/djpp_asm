@@ -1,0 +1,37 @@
+compile asm
+tasm -m9 project.asm
+
+ou tasm -ml project.asm
+
+tlink project
+
+tlink /t project
+
+
+
+
+
+nasm:
+NASM -f bin -o mbr.img mbr.asm
+nasm -f bin -o essai.com fichier.asm
+
+
+compiler djpp
+nasm -f elf test.asm  //tres important pour vous
+apres utiliser gcc
+
+
+
+gcc allfiledirectory -o namefile.exe (o minuscule)
+gcc -c file.c  //donne des fichiers .o (c miniscule)
+gcc -static file.c ou file.o -o file ou file.exe   //donne le fichier exe
+gcc -S file.c //donne le fichier en assembleur  //S majuscule
+gcc -g file.c ou file.asm  //g miniscule
+gcc -v file.c //pour voir les etapes de compilation v(minuscule signifie verbose)
+nm file.exe //pour rechercher les adresses des fonctions de gcc
+
+la commande ar
+La commande ldd permet de déterminer les librairies dynamiques
+gcc -E 
+edition de lien avec mv
+examier des fichiers sorits avec readelf
