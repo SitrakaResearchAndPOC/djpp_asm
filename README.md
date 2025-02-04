@@ -18,20 +18,6 @@ unzip linux-ex.zip
 ```
 ls
 ```
-## Compiling skel.asm
-```
-nasm -f elf32 -d ELF_TYPE -o skel.o skel.asm
-```
-```
-nasm -f elf32 -d ELF_TYPE -o asm_io.o asm_io.asm
-```
-```
-ld -m elf_i386 -o skel.elf skel.o asm_io.o -lc -dynamic-linker /lib/ld-linux.so.2
-```
-```
-./skel.elf
-```
-
 
 ## Integration of C and ASM
 ```
