@@ -18,6 +18,21 @@ unzip linux-ex.zip
 ```
 ls
 ```
+## Compiling skel.asm
+```
+nasm -f elf32 -d ELF_TYPE -o skel.o skel.asm
+```
+```
+nasm -f elf32 -d ELF_TYPE -o asm_io.o asm_io.asm
+```
+```
+ld -m elf_i386 -o skel.elf first.o asm_io.o -lc -dynamic-linker /lib/ld-linux.so.2
+```
+```
+./skel.elf
+```
+
+
 ## Integration of C and ASM
 ```
 nasm -f elf32 -d ELF_TYPE -o asm_io.o asm_io.asm
@@ -34,7 +49,7 @@ gcc -m32 -o first driver.c first.o asm_io.o
 
 ## Using linker only by ld command
 ```
-nasm -f elf32 -d ELF_TYPE -o first.o first.asm
+nasm -f elf32 -d ELF_TYPE -o asm_io.o asm_io.asm
 ```
 ```
 nasm -f elf32 -d ELF_TYPE -o first.o first.asm
