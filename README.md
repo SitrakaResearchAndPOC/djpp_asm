@@ -4,7 +4,7 @@
 apt update
 ```
 ```
-apt install nasm binutils gcc libc6-dev-i386 gcc-multilib git
+apt install nasm binutils gcc libc6-dev-i386 gcc-multilib git unzip
 ```
 ```
 git clone https://github.com/SitrakaResearchAndPOC/djpp_asm
