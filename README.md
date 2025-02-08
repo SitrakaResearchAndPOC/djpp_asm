@@ -1,10 +1,15 @@
-# djpp_asm compiled on linux (test with ubuntu 22.04) : 
+# djpp_asm compiled on linux  : 
 ## Installing dependancies
 ```
 apt update
 ```
+* For ubuntu 22.04
 ```
 apt install nasm binutils gcc libc6-dev-i386 gcc-multilib git unzip
+```
+* For ubuntu 24.04
+```
+sudo apt install nasm binutils-i686-linux-gnu gcc gcc-multilib libc6:i386 lib32gcc-s1 lib32stdc++6 git unzip
 ```
 ```
 git clone https://github.com/SitrakaResearchAndPOC/djpp_asm
