@@ -44,6 +44,10 @@ gcc -m32 -o first driver.c first.o asm_io.o
 
 ## Using linker only by ld command
 ```
+rm -rf *.o first
+```
+
+```
 nasm -f elf32 -d ELF_TYPE -o asm_io.o asm_io.asm
 ```
 ```
