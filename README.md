@@ -53,6 +53,16 @@ nasm -f elf32 -d ELF_TYPE -o asm_io.o asm_io.asm
 ```
 nasm -f elf32 -d ELF_TYPE -o first.o first.asm
 ```
+* avec specification des points d'entrée 
+```
+gcc -m32 -f win32 first.o asm_io.o -o first.exe -nostartfiles -Wl,-e,
+```
+* sans specification des points d'entrée (mais l'ethiquètte principale devrait être _start en windows et start en linux)
+```
+gcc -m32 -f win32 first.o asm_io.o -o first.exe -nostartfiles -Wl,-e,_nom_main_ethiquette
+```
+
+COMMAND LC, mais le plus efficace est le commande gcc
 ```
 ld -m elf_i386 -o first.elf first.o asm_io.o -lc -dynamic-linker /lib/ld-linux.so.2
 ```
